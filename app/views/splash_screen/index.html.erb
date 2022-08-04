@@ -1,8 +1,9 @@
 <section>
-    <h1 >Rails Budget App</h1>
-    <div>
-      <%= button_to "LOG IN", new_user_session_path, method: :get%>
-      <%= link_to 'Register',  new_user_registration_path %>
+  <div class="splash_container">
+    <h1 class="splash_title">Rails Budget App</h1>
+    <div class="splash_button_container">
+      <%= button_to "LOG IN", new_user_session_path, class: "log_in_button", method: :get%>
+      <%= link_to 'Register',  new_user_registration_path, class: "sign_up_link" %>
     </div>
   </div>
 </section>
