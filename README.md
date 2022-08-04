@@ -12,8 +12,10 @@
 
 ## Live Demo (if available)
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://pacific-river-07057.herokuapp.com/)
 
+## Video link
+[Video](https://www.loom.com/share/b55e1e94a5f045f3a4d9c9a8023f363e)
 
 ## Getting Started
 
