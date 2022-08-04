@@ -1,0 +1,2 @@
+class CategoryEntityJoinTabel < ApplicationRecord
+end
