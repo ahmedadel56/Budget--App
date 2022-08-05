@@ -3,8 +3,14 @@ class EntitiesController < ApplicationController
   before_action :set_entity, only: %i[show edit update destroy]
 
   def index
+    @category = Category.find(params[:category_id])
     @entities = Entity.all
-    @category_entities = CategoryEntity.all
+
+    # @category_entities = CategoryEntity.all
+    @category_entities = CategoryEntity.where(category_id: @category.id)
+    @entity_ids = []
+    @category_entities.each { |category_entity| @entity_ids.push(category_entity.entity_id) }
+    @entities = Entity.where(id: @entity_ids)
     @total = 0
     @category_entities.each { |category_entity| @total += category_entity.entity.amount }
   end

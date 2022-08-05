@@ -6,8 +6,6 @@
 <%= link_to "New entity", new_category_entity_path, :class => "fcc-btn" %>
 <div id="entities">
   <% @entities.each do |entity| %>
-    <%= link_to category_entities_path(entity) do %>
       <%= render entity %>
-    <% end %>
   <% end %>
 </div>
