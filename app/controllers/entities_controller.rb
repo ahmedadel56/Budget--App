@@ -5,6 +5,8 @@ class EntitiesController < ApplicationController
   def index
     @entities = Entity.all
     @category_entities = CategoryEntity.all
+    @total = 0
+    @category_entities.each { |category_entity| @total += category_entity.entity.amount }
   end
 
   def show; end
