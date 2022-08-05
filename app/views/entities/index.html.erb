@@ -1,0 +1,12 @@
+<p style="color: green"><%= notice %></p>
+<div class="heading">
+  <h1 class="heading__title">Transactions</h1>
+</div>
+  <h2>Total price <%= @total %></h2>
+<%= link_to "New entity", new_category_entity_path, :class => "fcc-btn" %>
+<div id="entities">
+  <% @entities.each do |entity| %>
+      <%= render entity %>
+  <% end %>
+  <%= link_to 'Retutn Categories',  categories_path %>
+</div>
